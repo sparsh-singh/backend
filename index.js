@@ -8,6 +8,11 @@ const app = express();
 app.use(cors());
 
 // Route with query parameters
+app.get('/', async (req, res) => {
+  res.send('Hey this is my API running 🥳')
+});
+
+
 app.get('/getTechStack', async (req, res) => {
   const url = req.query.url;
 
