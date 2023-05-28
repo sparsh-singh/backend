@@ -7,7 +7,7 @@ async function getTechStack(url, req , res) {
         params: { url: url },
         headers: {
             "Content-Type": "application/json",
-            "X-GENELIFY-API-KEY": process.env.X_GENELIFY_API_KEY,
+            "X-GENELIFY-API-KEY": "62a97a3153c136252e66aeead667fdd1c03b220e1839e3694811e66f9539c64d",
         },
     }
 
