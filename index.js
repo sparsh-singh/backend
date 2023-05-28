@@ -16,8 +16,9 @@ app.get('/', async (req, res) => {
 app.get('/getTechStack', async (req, res) => {
   const url = req.query.url;
 
-  const output = await getTechStack(url)
-  res.json(output.data)
+  const output = await getTechStack(url, req, res)
+
+  
 });
 
 app.get('/getMultiMedia', async (req, res) => {
